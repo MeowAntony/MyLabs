@@ -1,4 +1,17 @@
-str_mas = input("Введите массив: ").split(' ')
+with open("a.txt", "w+") as filea:
+    pass
+with open("b.txt", "w+") as fileb:
+    pass
+with open("c.txt", "w+") as filec:
+    pass
+with open("d.txt", "w+") as filed:
+    pass
+exit(1)
+while ch:
+    print(ch)
+    ch = mas_file.read(1)
+exit(1)
+
 int_mas = []
 for i in str_mas:
     if i.lstrip('-').isdigit():
