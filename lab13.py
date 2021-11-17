@@ -120,5 +120,5 @@ if __name__ == '__main__':
     hashtable = HashTable()
     for word in words:
         hashtable.add_value(word)
-    hashtable.check_value('зимний')
     hashtable.print_hash_table()
+    hashtable.check_value('зимний')

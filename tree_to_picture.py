@@ -63,7 +63,7 @@ def draw_pole(draw, diameter, level_now, level_max, index_element, cell_now: Cel
         x_left, y_left = get_x_y(diameter, level_now + 1, level_max, index_element * 2)
 
         draw.line((x + diameter // 2, y + diameter // 2,
-                   x_left + diameter // 2, y_left + diameter // 2), fill=(255, 255, 255),
+                   x_left + diameter // 2, y_left + diameter // 2), fill=(80, 209, 235),
                   width=diameter // 20)
 
         draw_pole(draw, diameter, level_now + 1, level_max, index_element * 2, cell_now.left)
@@ -72,12 +72,12 @@ def draw_pole(draw, diameter, level_now, level_max, index_element, cell_now: Cel
         x_right, y_right = get_x_y(diameter, level_now + 1, level_max, index_element * 2 + 1)
 
         draw.line((x + diameter // 2, y + diameter // 2,
-                   x_right + diameter // 2, y_right + diameter // 2), fill=(255, 255, 255),
+                   x_right + diameter // 2, y_right + diameter // 2), fill=(80, 209, 235),
                   width=diameter // 20)
 
         draw_pole(draw, diameter, level_now + 1, level_max, index_element * 2 + 1, cell_now.right)
 
-    draw.ellipse((x, y, x + diameter, y + diameter), fill=(255, 255, 255))
+    draw.ellipse((x, y, x + diameter, y + diameter), fill=(80, 209, 235))
     font = ImageFont.truetype("./123.ttf",
                               diameter // 2)  # FIXME вот тут шрифт задавать, можно контролировать в зависимости от числа
     draw.text((x + diameter // 2, y + diameter // 2),

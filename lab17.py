@@ -9,7 +9,7 @@ class Cell:
         self.parent: Cell = parent
 
 
-def construction_tree(cell_now, tree_str: str) -> Cell:
+def construction_tree(cell_now, tree_str: str):
     if '(' in tree_str:
         left_index = tree_str.find('(')
         cell_now.value = int(tree_str[:left_index])
